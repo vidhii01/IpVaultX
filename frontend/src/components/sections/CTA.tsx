@@ -1,8 +1,10 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Lock } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const CTA = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-32 relative overflow-hidden bg-dark-100 flex items-center justify-center">
             {/* Background Gradient */}
@@ -37,7 +39,10 @@ const CTA = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <button className="px-10 py-5 bg-white text-black rounded-xl font-mono text-sm font-bold uppercase tracking-widest hover:bg-gradient-to-r hover:from-[#00D1FF] hover:via-white hover:to-[#6C5DD3] hover:text-black transition-all shadow-[0_0_30px_-5px_rgba(255,255,255,0.3)] hover:shadow-[0_0_50px_-5px_rgba(0,209,255,0.6)] hover:-translate-y-1 group flex items-center gap-3">
+                        <button
+                            onClick={() => navigate('/register')}
+                            className="px-10 py-5 bg-white text-black rounded-xl font-mono text-sm font-bold uppercase tracking-widest hover:bg-gradient-to-r hover:from-[#00D1FF] hover:via-white hover:to-[#6C5DD3] hover:text-black transition-all shadow-[0_0_30px_-5px_rgba(255,255,255,0.3)] hover:shadow-[0_0_50px_-5px_rgba(0,209,255,0.6)] hover:-translate-y-1 group flex items-center gap-3"
+                        >
                             Start Protection Now
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>

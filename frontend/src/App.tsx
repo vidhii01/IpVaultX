@@ -9,6 +9,7 @@ import ProtocolPage from './pages/ProtocolPage';
 import TokenomicsPage from './pages/TokenomicsPage';
 import NetworkPage from './pages/NetworkPage';
 import IntegrationsPage from './pages/IntegrationsPage';
+import RegisterIP from './pages/RegisterIP';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tokenomics" element={<TokenomicsPage />} />
           <Route path="/network" element={<NetworkPage />} />
           <Route path="/integrations" element={<IntegrationsPage />} />
+          <Route path="/register" element={<RegisterIP />} />
         </Routes>
       </div>
     </Router>
