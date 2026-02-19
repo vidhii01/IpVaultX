@@ -44,9 +44,10 @@ const Footer = () => {
                             </h4>
                             <ul className="space-y-4 font-body text-gray-400">
                                 {[
-                                    { label: 'Features', href: '/#features' },
+                                    { label: 'Features', href: '/features' },
                                     { label: 'Integrations', href: '/integrations' },
                                     { label: 'Whitepaper', href: '/whitepaper' },
+                                    { label: 'Register IP', href: '/register' },
                                 ].map(item => (
                                     <li key={item.label}>
                                         <Link to={item.href} className="hover:text-primary-400 transition-colors flex items-center gap-2 group">
@@ -107,8 +108,8 @@ const Footer = () => {
                         © 2026 IpVaultX Inc. All rights reserved.
                     </p>
                     <div className="flex gap-8 text-xs font-mono text-gray-500 uppercase tracking-widest">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>

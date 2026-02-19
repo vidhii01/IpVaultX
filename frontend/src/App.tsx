@@ -10,6 +10,9 @@ import TokenomicsPage from './pages/TokenomicsPage';
 import NetworkPage from './pages/NetworkPage';
 import IntegrationsPage from './pages/IntegrationsPage';
 import RegisterIP from './pages/RegisterIP';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import FeaturesPage from './pages/FeaturesPage';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -28,6 +31,9 @@ function App() {
           <Route path="/network" element={<NetworkPage />} />
           <Route path="/integrations" element={<IntegrationsPage />} />
           <Route path="/register" element={<RegisterIP />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/features" element={<FeaturesPage />} />
         </Routes>
       </div>
     </Router>
