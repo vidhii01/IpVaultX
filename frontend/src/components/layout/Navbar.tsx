@@ -33,7 +33,7 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-10">
                     {[
-                        { label: 'Features', to: '/#features' },
+                        { label: 'Features', to: '/features' },
                         { label: 'Protocol', to: '/protocol' },
                         { label: 'Tokenomics', to: '/tokenomics' },
                         { label: 'Network', to: '/network' },
@@ -83,7 +83,7 @@ const Navbar = () => {
                     >
                         <div className="flex flex-col p-6 gap-6">
                             {[
-                                { label: 'Features', to: '/#features' },
+                                { label: 'Features', to: '/features' },
                                 { label: 'Protocol', to: '/protocol' },
                                 { label: 'Tokenomics', to: '/tokenomics' },
                                 { label: 'Network', to: '/network' },
