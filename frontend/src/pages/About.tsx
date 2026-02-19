@@ -170,17 +170,16 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* Institute Info */}
                 <section className="py-12 border-y border-white/5 bg-white/[0.02]">
                     <div className="container mx-auto px-6">
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-12 text-center">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
                             {[
                                 { icon: Building2, label: 'Institution', value: 'ABES Institute of Technology' },
                                 { icon: GraduationCap, label: 'Department', value: 'Data Science' },
                                 { icon: Star, label: 'Project Type', value: 'Final Year Research Project' },
                             ].map((item, i) => (
-                                <div key={i} className="flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center">
+                                <div key={i} className="flex items-center gap-4 justify-center sm:justify-start">
+                                    <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center shrink-0">
                                         <item.icon className="w-5 h-5 text-primary-400" />
                                     </div>
                                     <div className="text-left">
@@ -314,28 +313,7 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* CTA */}
-                <section className="py-20 bg-dark-100 border-t border-white/5">
-                    <div className="container mx-auto px-6 text-center max-w-2xl">
-                        <h2 className="text-3xl font-display font-bold text-white mb-4">Want to See It in Action?</h2>
-                        <p className="text-gray-400 mb-8">Try the live demo or read the full research paper to understand how IpVaultX protects intellectual property.</p>
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Link
-                                to="/connect"
-                                className="px-8 py-4 bg-white text-black font-mono font-bold text-sm tracking-widest uppercase rounded-xl hover:bg-gradient-to-r hover:from-[#00D1FF] hover:via-white hover:to-[#6C5DD3] hover:text-black transition-all flex items-center gap-3 group"
-                            >
-                                Try the Demo
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </Link>
-                            <Link
-                                to="/whitepaper"
-                                className="px-8 py-4 bg-transparent border border-white/20 text-white font-mono font-bold text-sm tracking-widest uppercase rounded-xl hover:bg-white/5 transition-all"
-                            >
-                                Read Paper
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+
             </main>
 
             <Footer />

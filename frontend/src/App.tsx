@@ -10,10 +10,12 @@ import TokenomicsPage from './pages/TokenomicsPage';
 import NetworkPage from './pages/NetworkPage';
 import IntegrationsPage from './pages/IntegrationsPage';
 import RegisterIP from './pages/RegisterIP';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-dark text-white">
         <Routes>
           <Route path="/" element={<LandingPage />} />
