@@ -5,8 +5,7 @@ import {
     Lock,
     Share2,
     Fingerprint,
-    Cpu,
-    Globe
+    Cpu
 } from 'lucide-react';
 
 const features = [

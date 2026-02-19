@@ -1,10 +1,19 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Key, Lock, ChevronRight, AlertTriangle, CheckCircle, Info, X } from 'lucide-react';
 import Logo from '../components/ui/Logo';
 import { ethers } from 'ethers';
 import { useNavigate } from 'react-router-dom';
+
+declare global {
+    interface Window {
+        ethereum?: {
+            request: (args: { method: string; params?: unknown[] }) => Promise<unknown>;
+            isMetaMask?: boolean;
+        };
+    }
+}
 
 const ConnectWallet = () => {
     const navigate = useNavigate();
@@ -15,7 +24,7 @@ const ConnectWallet = () => {
     const [showFAQ, setShowFAQ] = useState(false);
 
     // Mock connection function for non-web3 browsers or for testing UI states
-    const handleConnect = async (walletType: string) => {
+    const handleConnect = async (_walletType: string) => {
         setConnecting(true);
         setError(null);
 
@@ -108,8 +117,8 @@ const ConnectWallet = () => {
                                         key={net}
                                         onClick={() => setNetwork(net as any)}
                                         className={`flex-1 py-2 text-xs font-mono font-bold uppercase rounded-lg transition-all ${network === net
-                                                ? 'bg-white/10 text-white shadow-sm'
-                                                : 'text-gray-500 hover:text-gray-300'
+                                            ? 'bg-white/10 text-white shadow-sm'
+                                            : 'text-gray-500 hover:text-gray-300'
                                             }`}
                                     >
                                         {net}

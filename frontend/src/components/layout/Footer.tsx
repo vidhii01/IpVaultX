@@ -1,6 +1,5 @@
 
-import { motion } from 'framer-motion';
-import { ArrowRight, Twitter, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Twitter, Github, Linkedin } from 'lucide-react';
 import Logo from '../ui/Logo';
 import { Link } from 'react-router-dom';
 

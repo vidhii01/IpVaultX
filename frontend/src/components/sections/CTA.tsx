@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronRight, Lock } from 'lucide-react';
+import { ArrowRight, Lock } from 'lucide-react';
 
 const CTA = () => {
     return (

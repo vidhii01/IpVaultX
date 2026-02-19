@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { ArrowRight, FileText, CheckCircle, Database, Shield } from 'lucide-react';
+import { FileText, CheckCircle, Database, Shield } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Hero = () => {

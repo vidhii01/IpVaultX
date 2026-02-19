@@ -1,5 +1,5 @@
 
-import { Box, Diamond, Hexagon } from 'lucide-react';
+
 import { motion } from 'framer-motion';
 
 export const Logo = () => {

@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronRight, Lock, FileText } from 'lucide-react';
+import { Menu, X, ChevronRight, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from '../ui/Logo';
 
