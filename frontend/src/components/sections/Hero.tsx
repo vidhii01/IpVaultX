@@ -90,21 +90,21 @@ const Hero = () => {
 
                             {/* Floating Elements */}
                             <motion.div
-                                className="absolute -right-12 top-20 bg-dark-300 p-4 rounded-xl border border-white/10 shadow-xl flex items-center gap-3"
+                                className="absolute right-0 md:-right-12 top-16 md:top-20 bg-dark-300 px-3 py-2 md:p-4 rounded-xl border border-white/10 shadow-xl flex items-center gap-2 md:gap-3 z-20"
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             >
-                                <div className="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
-                                <span className="font-mono text-xs text-white">Hash #8X92-A Match</span>
+                                <div className="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.5)] shrink-0" />
+                                <span className="font-mono text-[10px] md:text-xs text-white whitespace-nowrap">Hash #8X92-A Match</span>
                             </motion.div>
 
                             <motion.div
-                                className="absolute -left-8 bottom-32 bg-dark-300 p-4 rounded-xl border border-white/10 shadow-xl flex items-center gap-3"
+                                className="absolute left-0 md:-left-8 bottom-24 md:bottom-32 bg-dark-300 px-3 py-2 md:p-4 rounded-xl border border-white/10 shadow-xl flex items-center gap-2 md:gap-3 z-20"
                                 animate={{ y: [0, 10, 0] }}
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                             >
-                                <CheckCircle className="w-4 h-4 text-primary-500" />
-                                <span className="font-mono text-xs text-white">Ownership Confirmed</span>
+                                <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-primary-500 shrink-0" />
+                                <span className="font-mono text-[10px] md:text-xs text-white whitespace-nowrap">Ownership Confirmed</span>
                             </motion.div>
                         </div>
                     </div>
